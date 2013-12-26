@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type="text/javascript" src="gen.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+        <script type="text/javascript" src="interface.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="interface.css" rel="stylesheet" media="screen">
+        <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <title> Passwords! </title>
+    <body>
+    <div></div>
+    <div class="container main">
+        <form onsubmit="return false;">
+            <h1>Welcome!</h1>
+            Word <input class="form-control" id="word" />
+            <br>
+            Seed <input class="form-control" id="seed" value="5" /> 
+            <br>
+            Difficulty <input class="form-control" id="difficulty" value="10" />
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg" onclick="interface.getIt()"> 
+                <span class="glyphicon glyphicon-star"></span> GET IT!
+            </button>
+        </form>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <input class="form-control" id="result"/>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </div>
+    <script src="dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
